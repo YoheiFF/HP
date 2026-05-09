@@ -1,0 +1,45 @@
+tools:
+  web_search:
+    enabled: true
+    provider: brave  # brave | duckduckgo
+    max_results: 5
+
+  file_ops:
+    enabled: true
+    allowed_extensions:
+      - .py
+      - .ts
+      - .js
+      - .md
+      - .txt
+      - .json
+      - .yaml
+      - .yml
+      - .toml
+      - .csv
+    max_file_size_mb: 10
+
+  code_exec:
+    enabled: false  # セキュリティリスクがあるため本番では慎重に
+    timeout_seconds: 30
+    allowed_languages:
+      - python
+
+  http_client:
+    enabled: true
+    timeout_seconds: 30
+    max_retries: 3
+    allowed_domains: []  # 空の場合はすべてのドメインを許可
+
+agent_tool_mapping:
+  code_agent:
+    - file_ops
+    - code_exec
+  research_agent:
+    - web_search
+    - http_client
+  document_agent:
+    - file_ops
+  task_agent: []
+  integration_agent:
+    - http_client

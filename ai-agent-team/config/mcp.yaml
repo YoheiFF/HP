@@ -1,0 +1,20 @@
+# MCPサーバー設定
+# このエージェント基盤をMCPサーバーとして外部公開する設定
+
+server:
+  name: ai-agent-team
+  version: "0.1.0"
+  host: "0.0.0.0"
+  port: 8765
+  description: "AIエージェントチーム基盤 MCPサーバー"
+
+# 公開するツール（外部からMCP経由でこのエージェント基盤を操作可能にする）
+exposed_tools:
+  - name: run_task
+    description: タスクをエージェントチームに実行させる
+  - name: get_memory
+    description: 共有メモリからキーを取得する
+  - name: set_memory
+    description: 共有メモリにキーと値を保存する
+  - name: list_agents
+    description: 利用可能なエージェント一覧を取得する

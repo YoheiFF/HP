@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(SEED_USER_ID=test SEED_PASSWORD=test node src/scripts/seed-user.js)",
+      "Bash(cp \"/c/Users/yohei/OneDrive/ドキュメント/個人事業関連/個タク業務管理システム/ロゴ/logo_big.png\" \"/c/コタカン/server/src/public/images/\")",
+      "Bash(cp \"/c/Users/yohei/OneDrive/ドキュメント/個人事業関連/個タク業務管理システム/ロゴ/logo_small.png\" \"/c/コタカン/server/src/public/images/\")",
+      "Bash(node -e ' *)",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "Bash(pip install *)",
+      "Bash(python -c ' *)",
+      "Bash(python -m pytest tests/ -v)",
+      "Bash(pacman -S --noconfirm sshpass)",
+      "Bash(python -c \"import paramiko; print\\('paramiko ok'\\)\")",
+      "Bash(where plink *)",
+      "Bash(where pscp *)",
+      "Bash(python -)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://153.126.191.110/)",
+      "Bash(curl -s http://153.126.191.110/)",
+      "Bash(python3 -c \"import sys; content=sys.stdin.read\\(\\); idx=content.find\\('<title>'\\); print\\(content[idx:idx+60]\\)\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://kindtech-harmony.com/)",
+      "Bash(curl -s https://kindtech-harmony.com/)",
+      "Bash(python3 -c \"import sys; c=sys.stdin.read\\(\\); i=c.find\\('<title>'\\); print\\(c[i:i+50]\\)\")",
+      "Bash(npm install *)",
+      "Skill(update-config)",
+      "Skill(update-config:*)"
+    ]
+  }
+}
