@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="フリーランスエンジニア・布施陽平の自己紹介ページです。大切にしていること、スキル、開発に向き合う姿勢を紹介しています。"
+    />
+    <title>布施陽平 | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="page-particles" id="page-particles" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-brand" href="index.html" aria-label="トップへ戻る">
+          <span class="site-brand__name">陽平</span>
+          <span class="site-brand__label">Profile / Portfolio</span>
+        </a>
+
+        <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+          <ul class="site-nav__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="メニューを開く"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-hero">
+        <div class="container">
+          <p class="eyebrow">About</p>
+          <h1>自己紹介</h1>
+          <p class="section-lead">
+            技術よりも、まず「何を解決したいか」を一緒に整理することを大切にしています。
+          </p>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-body" data-reveal>
+              <p>
+                フリーランスエンジニアとして、主にC#/.NETを用いた業務システムの開発・設計に携わっています。
+                要件定義や基本設計といった上流工程から参画し、関係者との認識合わせを丁寧に進めながら開発を進めることを得意としています。
+              </p>
+              <p>
+                「技術的にできるか」より先に「何のために作るか」を整理する。
+                そのためのコミュニケーションを惜しまないことが、品質とスピードの両立につながると考えています。
+                エンジニアとクライアントの間に立ち、橋渡しができる存在を目指しています。
+              </p>
+            </div>
+
+            <div class="about-points" data-reveal>
+              <article class="info-card">
+                <h3>主な活動</h3>
+                <p>C#/.NETを用いた業務システムの設計・開発。フリーランスとして複数プロジェクトに参画。</p>
+              </article>
+              <article class="info-card">
+                <h3>大切にしていること</h3>
+                <p>上流からの関与、丁寧なヒアリング、認識のズレを生まないコミュニケーション。</p>
+              </article>
+              <article class="info-card">
+                <h3>強み</h3>
+                <p>技術とビジネス要件をつなぐ視点。要件定義から実装まで一貫して担える柔軟性。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Possible / Skills -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Possible / Skills</p>
+            <h2>今できること</h2>
+            <p class="section-lead">
+              技術スキルと上流の視点を組み合わせ、要件整理から納品まで一気通貫で対応できます。
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card" data-reveal>
+              <h3>要件定義・仕様整理</h3>
+              <p>ヒアリングをもとに業務フローを整理し、仕様書・画面設計書などの上流ドキュメントを作成します。</p>
+            </article>
+            <article class="skill-card" data-reveal>
+              <h3>C# / .NET 開発</h3>
+              <p>業務システムを中心に、設計から実装・テストまで対応。保守性を意識したコード設計を心がけています。</p>
+            </article>
+            <article class="skill-card" data-reveal>
+              <h3>ステークホルダー対応</h3>
+              <p>クライアントや現場担当者との認識合わせを丁寧に行い、手戻りの少ない進め方を実現します。</p>
+            </article>
+            <article class="skill-card" data-reveal>
+              <h3>プロジェクト推進支援</h3>
+              <p>小規模チームでの進行管理や、技術・ビジネス間の橋渡し・折衝サポートにも対応できます。</p>
+            </article>
+          </div>
+
+          <p class="skills-note" data-reveal>
+            「何を作るか」がまだ固まっていない段階からでも、一緒に整理しながら進めることができます。
+          </p>
+        </div>
+      </section>
+
+      <!-- Message -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="message-panel" data-reveal>
+            <p class="eyebrow">Message</p>
+            <h2>開発に向き合う姿勢</h2>
+            <p>
+              技術は目的ではなく、課題を解決するための手段だと考えています。
+              だからこそ、コードを書く前に「何のために作るのか」を丁寧に確認することを大切にしています。
+            </p>
+            <p>
+              認識のズレは早いほど安く直せる。そのための対話を惜しまず、
+              クライアントが安心して任せられるエンジニアであり続けたいと思っています。
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-brand">陽平</p>
+        <p class="footer-copy">&copy; <span id="year"></span> Yohei Fuse. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@3.9.1/tsparticles.slim.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-snow@3/tsparticles.preset.snow.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

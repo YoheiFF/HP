@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="フリーランスエンジニア・布施陽平の個人制作物ページです。Webサイト、ゲーム、LINEスタンプを紹介しています。"
+    />
+    <title>布施陽平 | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="page-particles" id="page-particles" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-brand" href="index.html" aria-label="トップへ戻る">
+          <span class="site-brand__name">陽平</span>
+          <span class="site-brand__label">Profile / Portfolio</span>
+        </a>
+
+        <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+          <ul class="site-nav__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="メニューを開く"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-hero">
+        <div class="container">
+          <p class="eyebrow">Portfolio</p>
+          <h1>制作物</h1>
+          <p class="section-lead">
+            個人で制作したWebサイト、ゲーム、LINEスタンプを紹介しています。
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="portfolio-group" data-reveal>
+            <h3 class="portfolio-group__title">Webサイト</h3>
+            <div class="portfolio-grid">
+              <article class="portfolio-card">
+                <div class="portfolio-card__thumb portfolio-card__thumb--site"></div>
+                <div class="portfolio-card__body">
+                  <h4>コタカン</h4>
+                  <p>個人タクシー管理システム</p>
+                </div>
+              </article>
+              <article class="portfolio-card">
+                <div class="portfolio-card__thumb portfolio-card__thumb--site"></div>
+                <div class="portfolio-card__body">
+                  <h4>テスト対策</h4>
+                  <p>試験の対策勉強サービス</p>
+                  <a href="https://civilserviceapp.vercel.app/" class="portfolio-link" target="_blank" rel="noopener">サイトを見る →</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="portfolio-group" data-reveal>
+            <h3 class="portfolio-group__title">ゲーム</h3>
+            <div class="portfolio-grid">
+              <article class="portfolio-card">
+                <div class="portfolio-card__thumb portfolio-card__thumb--game"></div>
+                <div class="portfolio-card__body">
+                  <h4>脳トレ</h4>
+                  <p>脳トレゲーム</p>
+                  <a href="https://brain-game-opal.vercel.app/" class="portfolio-link" target="_blank" rel="noopener">プレイする →</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="portfolio-group" data-reveal>
+            <h3 class="portfolio-group__title">LINEスタンプ</h3>
+            <div class="portfolio-grid">
+              <article class="portfolio-card">
+                <div class="portfolio-card__thumb portfolio-card__thumb--stamp"></div>
+                <div class="portfolio-card__body">
+                  <h4>トド</h4>
+                  <p>トドをモチーフにしたLINEスタンプ</p>
+                  <a href="https://store.line.me/stickershop/product/28795922/ja" class="portfolio-link" target="_blank" rel="noopener">ストアで見る →</a>
+                </div>
+              </article>
+              <article class="portfolio-card">
+                <div class="portfolio-card__thumb portfolio-card__thumb--stamp"></div>
+                <div class="portfolio-card__body">
+                  <h4>ムース</h4>
+                  <p>ムースをモチーフにしたLINEスタンプ</p>
+                  <a href="https://store.line.me/stickershop/product/29067773/ja" class="portfolio-link" target="_blank" rel="noopener">ストアで見る →</a>
+                </div>
+              </article>
+              <article class="portfolio-card">
+                <div class="portfolio-card__thumb portfolio-card__thumb--stamp"></div>
+                <div class="portfolio-card__body">
+                  <h4>マナティー</h4>
+                  <p>マナティーをモチーフにしたLINEスタンプ</p>
+                  <a href="https://store.line.me/stickershop/product/28359220/ja" class="portfolio-link" target="_blank" rel="noopener">ストアで見る →</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-brand">陽平</p>
+        <p class="footer-copy">&copy; <span id="year"></span> Yohei Fuse. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@3.9.1/tsparticles.slim.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-snow@3/tsparticles.preset.snow.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

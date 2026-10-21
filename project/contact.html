@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="フリーランスエンジニア・布施陽平へのお問い合わせページです。メールやSNSからお気軽にご連絡ください。"
+    />
+    <title>布施陽平 | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="page-particles" id="page-particles" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-brand" href="index.html" aria-label="トップへ戻る">
+          <span class="site-brand__name">陽平</span>
+          <span class="site-brand__label">Profile / Portfolio</span>
+        </a>
+
+        <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+          <ul class="site-nav__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="メニューを開く"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section page-hero">
+        <div class="container contact-grid">
+          <div class="contact-copy" data-reveal>
+            <p class="eyebrow">Contact</p>
+            <h1>お問い合わせ</h1>
+            <p class="section-lead">
+              ご相談内容がまだまとまっていない段階でも問題ありません。まずは気軽にご連絡ください。
+            </p>
+            <p>
+              現在はメールやSNSからのご連絡を中心に受け付けています。
+              内容を確認のうえ、2〜3日以内を目安にお返事します。
+            </p>
+          </div>
+
+          <div class="contact-card" data-reveal>
+            <div class="contact-item">
+              <span class="contact-item__label">Mail</span>
+              <a href="mailto:yohei.0818@outlook.jp">yohei.0818@outlook.jp</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item__label">Instagram</span>
+              <span class="coming-soon">Coming Soon</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item__label">X</span>
+              <a href="https://x.com/yohei_devlog" target="_blank" rel="noopener noreferrer">@yohei_devlog</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item__label">Address</span>
+              <span>神奈川県横浜市神奈川区金港町5-14 クアドリフォリオ8階</span>
+            </div>
+            <div class="contact-note">
+              お名前とご相談内容を簡単に添えていただければ、
+              内容がふんわりしていても大丈夫です。
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-brand">陽平</p>
+        <p class="footer-copy">&copy; <span id="year"></span> Yohei Fuse. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@3.9.1/tsparticles.slim.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-snow@3/tsparticles.preset.snow.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

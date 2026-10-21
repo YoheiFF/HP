@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const pageParticles = document.getElementById("page-particles");
   const revealTargets = document.querySelectorAll("[data-reveal]");
   const navLinks = document.querySelectorAll(".site-nav a");
-  const sections = document.querySelectorAll("main section[id]");
+  const navToggle = document.querySelector(".nav-toggle");
+  const siteNav = document.querySelector(".site-nav");
   const year = document.getElementById("year");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -31,6 +32,24 @@ document.addEventListener("DOMContentLoaded", () => {
   updateHeaderState();
   window.addEventListener("scroll", updateHeaderState, { passive: true });
 
+  if (navToggle && siteNav) {
+    const closeNav = () => {
+      siteNav.classList.remove("is-open");
+      navToggle.classList.remove("is-active");
+      navToggle.setAttribute("aria-expanded", "false");
+    };
+
+    navToggle.addEventListener("click", () => {
+      const isOpen = siteNav.classList.toggle("is-open");
+      navToggle.classList.toggle("is-active", isOpen);
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    siteNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeNav);
+    });
+  }
+
   if (pageParticles && window.tsParticles && !reduceMotion) {
     const initPageParticles = async () => {
       if (typeof window.loadSnowPreset === "function") {
@@ -55,12 +74,12 @@ document.addEventListener("DOMContentLoaded", () => {
           preset: "snow",
           particles: {
             color: {
-              value: ["#ffffff", "#edf1ef", "#d9e2dd"],
+              value: ["#f3d9b8", "#e9c6a0", "#f7ece0"],
             },
             move: {
               enable: true,
               direction: "bottom",
-              speed: 0.7,
+              speed: 0.5,
               random: true,
               straight: false,
               outModes: {
@@ -68,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
               },
             },
             number: {
-              value: 56,
+              value: 38,
               density: {
                 enable: true,
                 area: 900,
@@ -76,8 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             opacity: {
               value: {
-                min: 0.35,
-                max: 0.78,
+                min: 0.2,
+                max: 0.55,
               },
             },
             shape: {
@@ -140,30 +159,12 @@ document.addEventListener("DOMContentLoaded", () => {
     revealTargets.forEach((element) => revealObserver.observe(element));
   }
 
-  if (!navLinks.length || !sections.length) return;
+  if (!navLinks.length) return;
 
-  const setActiveLink = (id) => {
-    navLinks.forEach((link) => {
-      const targetId = link.getAttribute("href")?.replace("#", "");
-      link.classList.toggle("is-active", targetId === id);
-    });
-  };
+  const currentPage = location.pathname.split("/").pop() || "index.html";
 
-  const sectionObserver = new IntersectionObserver(
-    (entries) => {
-      const visibleEntry = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-      if (visibleEntry) {
-        setActiveLink(visibleEntry.target.id);
-      }
-    },
-    {
-      threshold: 0.35,
-      rootMargin: "-40% 0px -45% 0px",
-    }
-  );
-
-  sections.forEach((section) => sectionObserver.observe(section));
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    link.classList.toggle("is-active", href === currentPage);
+  });
 });

@@ -4,3 +4,9 @@
 dist/
 build/
 *.log
+
+# 本番不要ファイル
+project.zip
+discord-attachments/
+最終HPイメージ/
+.claude-prompt-*.txt
