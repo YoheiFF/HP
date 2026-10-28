@@ -11,27 +11,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/top.css" />
   </head>
   <body>
-    <div class="page-particles" id="page-particles" aria-hidden="true"></div>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="site-brand" href="index.html" aria-label="トップへ戻る">
-          <span class="site-brand__name">陽平</span>
-          <span class="site-brand__label">Profile / Portfolio</span>
-        </a>
+        <a class="site-brand" href="#top" aria-label="トップへ戻る">布施陽平</a>
 
         <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
           <ul class="site-nav__list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 
@@ -50,186 +47,311 @@
     </header>
 
     <main>
-      <!-- First View -->
-      <section class="hero section" id="top">
-        <div class="container hero-grid">
-          <div class="hero-copy" data-reveal>
-            <p class="tagline">Freelance Engineer</p>
-            <h1>
-              上流から、丁寧に。<br />
-              <span class="hero-highlight">一緒に、形にする。</span>
-            </h1>
-            <p class="hero-lead">
-              フリーランスエンジニアとして、要件定義・設計から実装まで一貫して対応しています。
+      <!-- Hero -->
+      <section class="hero" id="top">
+        <div class="hero__inner container">
+          <h1 class="hero__title">上流から、丁寧に<br />一緒に形にする</h1>
+          <div class="hero__body">
+            <p>
+              フリーランスエンジニアとして、<br />
+              要件定義・設計から実装まで一貫して対応しています。<br />
+              技術力を活かしながらも、関係者との対話を<br />
+              大切に進めることを重視しています。<br />
+              「何を作るか」から一緒に考え、<br />
+              認識のズレが少ない開発を心がけています。
             </p>
-            <p class="hero-text">
-              技術力を活かしながらも、関係者との対話を大切にしながら進めることを重視しています。
-              「何を作るか」から一緒に考え、認識のズレが少ない開発を心がけています。
-            </p>
-            <div class="hero-actions">
-              <a class="button-primary" href="works.html">実績を見る</a>
-              <a class="button-ghost" href="contact.html">お問い合わせ</a>
-            </div>
-
-            <dl class="hero-facts">
-              <div>
-                <dt>Focus</dt>
-                <dd>C#/.NET 業務システム開発</dd>
-              </div>
-              <div>
-                <dt>Role</dt>
-                <dd>要件定義〜上流設計</dd>
-              </div>
-              <div>
-                <dt>Style</dt>
-                <dd>対話を重ねる合意形成</dd>
-              </div>
-            </dl>
+            <a class="button-cta" href="#works">実績を見る <span aria-hidden="true">&gt;</span></a>
           </div>
-
-          <aside class="hero-portrait" data-reveal>
-            <div class="hero-portrait__frame"></div>
-            <p class="hero-portrait__caption">陽平 — Freelance Engineer</p>
-          </aside>
         </div>
       </section>
 
-      <!-- About teaser -->
+      <!-- Profile -->
+      <section class="section" id="profile">
+        <div class="container">
+          <h2 class="section-title">Profile</h2>
+          <div class="section-body">
+            <p class="section-subtitle">布施陽平</p>
+            <div class="profile">
+              <div class="image-slot profile__image" aria-hidden="true"></div>
+              <div class="profile__text">
+                <p class="profile__lead">
+                  フリーランスエンジニア。<br />
+                  C#/.NETを主軸に、業務システムの開発・設計を中心に活動しています。
+                </p>
+                <h3 class="profile__focus-title">Current Focus</h3>
+                <ul class="profile__focus">
+                  <li>C#/.NETによる業務システム開発</li>
+                  <li>要件定義・基本設計への上流参画</li>
+                  <li>ステークホルダーとの円滑な合意形成</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
       <section class="section" id="about">
         <div class="container">
-          <div class="teaser-head" data-reveal>
-            <div>
-              <p class="eyebrow">About</p>
-              <h2>自己紹介</h2>
+          <h2 class="section-title">About</h2>
+          <div class="section-body">
+            <p class="section-subtitle">自己紹介</p>
+            <p class="section-text">
+              技術よりも、まず「何を解決したいか」を一緒に整理することを大切にしています。<br />
+              フリーランスエンジニアとして、主にC#/.NETを用いた業務システムの開発・設計に携わっています。
+              要件定義や基本設計といった上流工程から参画し、関係者との認識合わせを丁寧に進めながら開発を進めることを得意としています。<br />
+              「技術的にできるか」より先に「何のために作るか」を整理する。
+              そのためのコミュニケーションを惜しまないことが、品質とスピードの両立につながると考えています。
+              エンジニアとクライアントの間に立ち、橋渡しができる存在を目指しています。
+            </p>
+            <div class="about-circles">
+              <div class="about-circle about-circle--top">
+                <h3>主な活動</h3>
+                <p>C#/.NETを用いた<br />業務システムの<br />設計・開発。<br />フリーランスとして<br />複数プロジェクトに<br />参画。</p>
+              </div>
+              <div class="about-circle about-circle--left">
+                <h3>大切に<br />していること</h3>
+                <p>上流からの関与<br />丁寧なヒアリング<br />認識のズレを生まない<br />コミュニケーション</p>
+              </div>
+              <div class="about-circle about-circle--right">
+                <h3>強み</h3>
+                <p>技術と<br />ビジネス要件を<br />つなぐ視点。<br />要件定義から実装まで<br />一貫して担える柔軟性。</p>
+              </div>
             </div>
-            <a class="teaser-link" href="about.html">プロフィールを見る →</a>
           </div>
-          <p class="section-lead" data-reveal>
-            技術よりも、まず「何を解決したいか」を一緒に整理することを大切にしています。
-            フリーランスエンジニアとして、要件定義・設計から実装まで一貫して対応しています。
-          </p>
         </div>
       </section>
 
-      <!-- Works digest -->
-      <section class="section section-alt" id="works">
+      <!-- Works -->
+      <section class="section" id="works">
         <div class="container">
-          <div class="teaser-head" data-reveal>
-            <div>
-              <p class="eyebrow">Works</p>
-              <h2>主な実績</h2>
+          <h2 class="section-title">Works</h2>
+          <div class="section-body">
+            <div class="section-head">
+              <p class="section-subtitle">主な実績</p>
+              <p class="section-head__note">
+                要件定義・設計・実装まで、上流から一貫して携わったプロジェクトを中心に紹介しています。
+              </p>
             </div>
-            <a class="teaser-link" href="works.html">実績を詳しく見る →</a>
-          </div>
 
-          <div class="works-grid">
-            <article class="work-card" data-reveal>
-              <div class="work-visual work-visual--stamp">
-                <span>Business System</span>
-              </div>
-              <div class="work-card__body">
-                <p class="work-meta">C# / .NET / SQL Server</p>
-                <h3>業務システム開発</h3>
-                <p>
-                  製造・物流・社内管理系を中心に、業務フローの整理から設計・実装まで担当しています。
-                </p>
-                <a class="work-card__link" href="works.html#business-system">ケースを見る →</a>
-              </div>
+            <article class="work">
+              <p class="work__label">Business System <span>C# / .NET / SQL Server</span></p>
+              <h3 class="work__title">業務システム開発</h3>
+              <p class="work__text">
+                製造・物流・社内管理系を中心に、業務フローの整理から設計・実装まで担当。
+                現場担当者へのヒアリングを重ね、使いやすさと保守性を両立した設計を意識しています。
+              </p>
+              <ul class="tags">
+                <li>C# / .NET</li>
+                <li>要件定義</li>
+                <li>DB設計</li>
+              </ul>
             </article>
 
-            <article class="work-card" data-reveal>
-              <div class="work-visual work-visual--web">
-                <span>Upstream Support</span>
-              </div>
-              <div class="work-card__body">
-                <p class="work-meta">要件定義 / 基本設計 / ドキュメント整備</p>
-                <h3>上流工程支援</h3>
-                <p>
-                  クライアントの要望を整理し、仕様書・画面設計書・業務フロー図などの成果物を作成しています。
-                </p>
-                <a class="work-card__link" href="works.html#upstream-support">ケースを見る →</a>
-              </div>
+            <article class="work">
+              <p class="work__label">Upstream Support <span>要件定義 / 基本設計 / ドキュメント整備</span></p>
+              <h3 class="work__title">上流工程支援</h3>
+              <p class="work__text">
+                チームリーダーとしてメンバーのタスク管理・進捗把握を担いながら、クライアントの要望を整理し、仕様書・画面設計書・業務フロー図などの成果物を作成。
+                認識のズレを早期に潰しながら、スムーズな開発着手につなげています。
+              </p>
+              <ul class="tags">
+                <li>ヒアリング</li>
+                <li>仕様整理</li>
+                <li>合意形成</li>
+              </ul>
             </article>
 
-            <article class="work-card" data-reveal>
-              <div class="work-visual work-visual--personal">
-                <span>Personal Works</span>
-              </div>
-              <div class="work-card__body">
-                <p class="work-meta">WEBサイト / ゲーム / LINEスタンプ</p>
-                <h3>個人制作</h3>
-                <p>
-                  業務外でも、WEBサイトやゲーム、LINEスタンプの制作を個人的に行っています。
-                </p>
-                <a class="work-card__link" href="works.html#personal-works">ケースを見る →</a>
-              </div>
+            <article class="work">
+              <p class="work__label">Personal Works <span>WEBサイト / ゲーム / LINEスタンプ</span></p>
+              <h3 class="work__title">個人制作</h3>
+              <p class="work__text">
+                業務外でも、WEBサイトやゲーム、LINEスタンプの制作などを個人的に行っています。
+                興味のある技術を試しながら、自分のペースでものづくりを楽しんでいます。
+              </p>
+              <ul class="tags">
+                <li>WEB制作</li>
+                <li>ゲーム開発</li>
+                <li>LINEスタンプ</li>
+              </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Portfolio digest -->
+      <!-- Portfolio -->
       <section class="section" id="portfolio">
         <div class="container">
-          <div class="teaser-head" data-reveal>
-            <div>
-              <p class="eyebrow">Portfolio</p>
-              <h2>制作物</h2>
+          <h2 class="section-title">Portfolio</h2>
+          <div class="section-body">
+            <div class="section-head">
+              <p class="section-subtitle">制作物</p>
+              <p class="section-head__note">個人で制作したWebサイト、ゲーム、LINEスタンプを紹介しています。</p>
             </div>
-            <a class="teaser-link" href="portfolio.html">すべて見る →</a>
-          </div>
 
-          <div class="portfolio-grid" data-reveal>
-            <article class="portfolio-card">
-              <div class="portfolio-card__thumb portfolio-card__thumb--site"></div>
-              <div class="portfolio-card__body">
-                <h4>コタカン</h4>
-                <p>個人タクシー管理システム</p>
+            <!-- Webサイト -->
+            <div class="pf-band pf-band--web">
+              <div class="pf-band__inner">
+                <h3 class="pf-band__title">Webサイト</h3>
+                <div class="pf-item">
+                  <div class="image-slot image-slot--circle pf-item__icon" aria-hidden="true"></div>
+                  <p class="pf-item__text">コタカン<br />個人タクシー管理システム</p>
+                </div>
+                <a class="pf-item pf-item--reverse" href="https://civilserviceapp.vercel.app/" target="_blank" rel="noopener">
+                  <div class="image-slot image-slot--circle pf-item__icon" aria-hidden="true"></div>
+                  <p class="pf-item__text">テスト対策<br />試験の対策勉強サービス</p>
+                </a>
               </div>
-            </article>
-            <article class="portfolio-card">
-              <div class="portfolio-card__thumb portfolio-card__thumb--game"></div>
-              <div class="portfolio-card__body">
-                <h4>脳トレ</h4>
-                <p>脳トレゲーム</p>
+            </div>
+
+            <!-- ゲーム -->
+            <div class="pf-band pf-band--game">
+              <div class="pf-band__inner">
+                <h3 class="pf-band__title pf-band__title--pill">ゲーム</h3>
+                <div class="pf-item">
+                  <div class="image-slot image-slot--circle pf-item__icon" aria-hidden="true"></div>
+                  <p class="pf-item__text">脳トレ<br />脳トレゲーム</p>
+                </div>
+                <a class="pf-band__more" href="https://brain-game-opal.vercel.app/" target="_blank" rel="noopener">プレイする →</a>
               </div>
-            </article>
-            <article class="portfolio-card">
-              <div class="portfolio-card__thumb portfolio-card__thumb--stamp"></div>
-              <div class="portfolio-card__body">
-                <h4>LINEスタンプ</h4>
-                <p>トド・ムース・マナティーの3種</p>
+            </div>
+
+            <!-- LINEスタンプ -->
+            <div class="pf-band pf-band--stamp">
+              <div class="pf-band__inner">
+                <h3 class="pf-band__title pf-band__title--pill">LINEスタンプ</h3>
+                <div class="stamps">
+                  <div class="stamp">
+                    <h4>トド</h4>
+                    <img class="stamp__image" src="./images/stamp-todo.jpg" alt="トドのLINEスタンプ" width="160" height="160" loading="lazy" />
+                    <p>トドをモチーフにしたLINEスタンプ</p>
+                    <a href="https://store.line.me/stickershop/product/28795922/ja" target="_blank" rel="noopener">ストアで見る →</a>
+                  </div>
+                  <div class="stamp">
+                    <h4>ムース</h4>
+                    <img class="stamp__image" src="./images/stamp-moose.jpg" alt="ムースのLINEスタンプ" width="160" height="160" loading="lazy" />
+                    <p>ムースをモチーフにしたLINEスタンプ</p>
+                    <a href="https://store.line.me/stickershop/product/29067773/ja" target="_blank" rel="noopener">ストアで見る →</a>
+                  </div>
+                  <div class="stamp">
+                    <h4>マナティー</h4>
+                    <img class="stamp__image" src="./images/stamp-manatee.jpg" alt="マナティーのLINEスタンプ" width="160" height="160" loading="lazy" />
+                    <p>マナティーをモチーフにしたLINEスタンプ</p>
+                    <a href="https://store.line.me/stickershop/product/28359220/ja" target="_blank" rel="noopener">ストアで見る →</a>
+                  </div>
+                </div>
               </div>
-            </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Contact CTA -->
-      <section class="section section-alt" id="contact">
+      <!-- Possible / Skills -->
+      <section class="section" id="skills">
         <div class="container">
-          <div class="cta-band" data-reveal>
-            <p class="eyebrow">Contact</p>
-            <h2>まずは気軽にご相談ください</h2>
-            <p>
-              ご相談内容がまだまとまっていない段階でも問題ありません。
+          <h2 class="section-title">Possible / Skills</h2>
+          <div class="section-body">
+            <div class="section-head">
+              <p class="section-subtitle">今できること</p>
+              <p class="section-head__note">
+                技術スキルと上流の視点を組み合わせ、要件整理から納品まで一気通貫で対応できます。
+              </p>
+            </div>
+
+            <div class="skills">
+              <div class="image-slot skills__photo skills__photo--tl" aria-hidden="true"></div>
+              <div class="image-slot skills__photo skills__photo--tr" aria-hidden="true"></div>
+              <div class="skill-card">
+                <h3>要件定義・仕様整理</h3>
+                <p>ヒアリングをもとに業務フローを整理し、仕様書・画面設計書などの上流ドキュメントを作成します。</p>
+              </div>
+              <div class="skill-card">
+                <h3>C# / .NET 開発</h3>
+                <p>業務システムを中心に、設計から実装・テストまで対応。保守性を意識したコード設計を心がけています。</p>
+              </div>
+              <div class="skill-card">
+                <h3>ステークホルダー対応</h3>
+                <p>クライアントや現場担当者との認識合わせを丁寧に行い、手戻りの少ない進め方を実現します。</p>
+              </div>
+              <div class="skill-card">
+                <h3>プロジェクト推進支援</h3>
+                <p>小規模チームでの進行管理や、技術・ビジネス間の橋渡し・折衝サポートにも対応できます。</p>
+              </div>
+              <div class="image-slot skills__photo skills__photo--bl" aria-hidden="true"></div>
+              <div class="image-slot skills__photo skills__photo--br" aria-hidden="true"></div>
+            </div>
+
+            <p class="skills__note">
+              <span class="skills__note-icon" aria-hidden="true">💡</span>
+              「何を作るか」がまだ固まっていない段階からでも、<br />一緒に整理しながら進めることができます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Message -->
+      <section class="section" id="message">
+        <div class="container">
+          <h2 class="section-title">Message</h2>
+          <div class="section-body">
+            <p class="section-subtitle">開発に向き合う姿勢</p>
+            <p class="section-text">
+              技術は目的ではなく、課題を解決するための手段だと考えています。
+              だからこそ、コードを書く前に「何のために作るのか」を丁寧に確認することを大切にしています。<br />
+              認識のズレは早いほど安く直せる。そのための対話を惜しまず、クライアントが安心して任せられるエンジニアであり続けたいと思っています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <div class="section-body">
+            <p class="section-subtitle">お問い合わせ</p>
+            <p class="section-text">
+              ご相談内容がまだまとまっていない段階でも問題ありません。<br />
+              まずは気軽にご連絡ください。<br />
+              現在はメールやSNSからのご連絡を中心に受け付けています。<br />
               内容を確認のうえ、2〜3日以内を目安にお返事します。
             </p>
-            <a class="button-primary" href="contact.html">お問い合わせ</a>
+
+            <ul class="contact-list">
+              <li>
+                <span class="contact-list__icon" aria-hidden="true">✉</span>
+                <span class="contact-list__label">Mail</span>
+                <a href="mailto:yohei.0818@outlook.jp">yohei.0818@outlook.jp</a>
+              </li>
+              <li>
+                <span class="contact-list__icon" aria-hidden="true">◎</span>
+                <span class="contact-list__label">Instagram</span>
+                <span>Coming Soon</span>
+              </li>
+              <li>
+                <span class="contact-list__icon" aria-hidden="true">𝕏</span>
+                <span class="contact-list__label">X</span>
+                <a href="https://x.com/yohei_devlog" target="_blank" rel="noopener">@yohei_devlog</a>
+              </li>
+              <li>
+                <span class="contact-list__icon" aria-hidden="true">⌖</span>
+                <span class="contact-list__label">Address</span>
+                <span>神奈川県横浜市神奈川区金港町5-14 クアドリフォリオ8階</span>
+              </li>
+            </ul>
+
+            <p class="contact-note">
+              お名前とご相談内容を簡単に添えていただければ、<br />内容がふんわりしていても大丈夫です。
+            </p>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p class="footer-brand">陽平</p>
-        <p class="footer-copy">&copy; <span id="year"></span> Yohei Fuse. All rights reserved.</p>
-      </div>
+      <p>&copy; <span id="year"></span> Yohei Fuse. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@3.9.1/tsparticles.slim.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-snow@3/tsparticles.preset.snow.bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
